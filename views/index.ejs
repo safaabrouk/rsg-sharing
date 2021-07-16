@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSG Sharing - File Sharing Made Easy</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <img src="/img/logo.png" alt="RSG logo" class="logo">
+    <section class="upload-container">
+        <form action="">
+            <div class="drop-zone">
+                <div class="icon-container">
+                    <img src="/img/file.svg" draggable="false" class="center" alt="File Icon">
+                    <img src="/img/file.svg" draggable="false" class="left" alt="File Icon">
+                    <img src="/img/file.svg" draggable="false" class="right" alt="File Icon">
+                </div>
+                <input type="file" id="fileInput">
+                <div class="title">Déposez vos fichiers ici ou, <span id="browseBtn">parcourez</span></div>
+            </div>
+        </form>
+        <div class="progress-container">
+            <div class="bg-progress"></div>
+
+            <div class="inner-container">
+                <div class="status">Téléchargement...</div>
+                <div class="percent-container">
+                    <span class="percentage" id="progressPercent">0</span>%
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+
+        </div>
+        <div class="sharing-container">
+            <p class="expire">Le lien expire dans 24 heures</p>
+
+
+            <div class="input-container">
+                <input type="text" id="fileURL" readonly>
+                <img src="/img/copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
+            </div>
+
+
+            <p class="email-info">Ou envoyer par e-mail</p>
+            <div class="email-container">
+                <form id="emailForm">
+                    <div class="filed">
+                        <label for="fromEmail">Votre e-mail</label>
+                        <input type="email" autocomplete="email" required name="from-email" id="fromEmail">
+                    </div>
+
+                    <div class="filed">
+                        <label for="toEmail">Email de récepteur</label>
+                        <input type="email" required autocomplete="receiver" name="to-email" id="toEmail">
+                    </div>
+                    <div class="send-btn-container">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="image-vector"></div>
+    <div class="toast">exemple de message</div>
+
+    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/dd1d7d0c31.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
