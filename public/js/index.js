@@ -17,8 +17,7 @@ const toast = document.querySelector(".toast");
 
 // const baseURL = "https://innshare.herokuapp.com";
 const baseURL = "https://rsg-sharing.herokuapp.com";
-//const uploadURL = `${baseURL}/api/files`;
-const uploadURL = `${baseURL}/files`;
+const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
 const maxAllowedSize = 100 * 1024 * 1027; //100mb
