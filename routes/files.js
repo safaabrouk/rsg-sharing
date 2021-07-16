@@ -3,16 +3,29 @@ const multer = require('multer');
 const path = require('path');
 const File = require('../models/file');
 const { v4: uuidv4 } = require('uuid');
+const {GridFsStorage} = require('multer-gridfs-storage');
 
-let storage = multer.diskStorage({
-    destination: (req, file, cb) => cb(null, 'uploads/') ,
-    filename: (req, file, cb) => {
-        const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E9)}${path.extname(file.originalname)}`;
-              cb(null, uniqueName)
-    } ,
-});
+const url_bd = "mongodb+srv://rsgSharing:JH2j608EHdVGcLaG@cluster0.ccmyw.mongodb.net/rsgsharing?retryWrites=true&w=majority";
+// GridFs !!!
+
+let storage = new GridFsStorage({
+  url:url_bd,
+  file: (req, file) => {
+    return new Promise((resolve, reject) => {
+    const uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E9)}${path.extname(file.originalname)}`;
+    const fileInfo = {
+    filename: uniqueName,
+    bucketName: 'files'
+    };
+    resolve(fileInfo);
+  });
+
+}
+  });
 
 let upload = multer({ storage, limits:{ fileSize: 1000000 * 100 }, }).single('myfile'); //100mb
+
+// GridFs !!!
 
 router.post('/', (req, res) => {
     upload(req, res, async (err) => {
