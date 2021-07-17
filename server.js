@@ -20,6 +20,12 @@ const path = require('path');
 
 // app.use(cors(corsOptions));
 app.use(express.static('public'));
+
+// Chragement du page ----------------------
+app.get("/", function(req, res) {
+  res.sendFile(__dirname+"/views/index.html");
+});
+
 // app.use(express.static(__dirname + '/public'));
 
 const connectDB = require('./config/db');

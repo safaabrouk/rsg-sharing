@@ -1,74 +1,327 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSG Sharing - File Sharing Made Easy</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RSG-Sharing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/css/accueil.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Regna - v4.3.0
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <img src="./images/logo.png" alt="RSG logo" class="logo">
-    <section class="upload-container">
-        <form action="">
-            <div class="drop-zone">
-                <div class="icon-container">
-                    <img src="./images/file.svg" draggable="false" class="center" alt="File Icon">
-                    <img src="./images/file.svg" draggable="false" class="left" alt="File Icon">
-                    <img src="./images/file.svg" draggable="false" class="right" alt="File Icon">
-                </div>
-                <input type="file" id="fileInput">
-                <div class="title">Déposez vos fichiers ici ou, <span id="browseBtn">parcourez</span></div>
-            </div>
-        </form>
-        <div class="progress-container">
-            <div class="bg-progress"></div>
 
-            <div class="inner-container">
-                <div class="status">Téléchargement...</div>
-                <div class="percent-container">
-                    <span class="percentage" id="progressPercent">0</span>%
-                </div>
-                <div class="progress-bar"></div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <a href="#"><img src="" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Welcome to RSG-Sharing</h1>
+      <h2>Easiest way to upload ur files !</h2>
+      <a href="https://rsg-sharing.herokuapp.com/files" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content ">
+            <br><br><br>
+            <h2 class="title">Few Words About Us</h2>
+            <br>
+            <p>
+              Your large files are stored on well-secured servers. <br>
+              You get, at the end of sending your big file, a unique link 
+              that you can send to your correspondents to download the file
+              or folder...
+            </p>
+
+          </div>
+
+          <div class="col-lg-6 " data-aos="fade-left" >
+              <img src="/img/photo.svg" id="share" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Services</h3>
+          <p class="section-description">Start getting work done your way</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-file-earmark-arrow-up-fill "></i></a></div>
+              <h4 class="title"><a href="">Securely share large files</a></h4>
+              <p class="description">Easily access, send and sync. 
+                No cumbersome FTP, CDs or thumb drives required.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-shield-lock-fill"></i></a></div>
+              <h4 class="title"><a href="">Protect client and business information</a></h4>
+              <p class="description">Bank-level data encryption secures your files in transit and at rest.
+                 And with more than 25 customizable security settings, you have the power to recover lost 
+                 data and prevent leaks.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-gear-fill"></i></a></div>
+              <h4 class="title"><a href="">Get a partner in compliance</a></h4>
+              <p class="description">Trust us to provide the support you need to maintain regulatory
+                 compliance with the guidelines affecting your industry— HIPAA, HITECH, FINRA, CFPB, 
+                 bar association ethics rules and more.
+              </p>
+            </div>
+          </div>
 
         </div>
-        <div class="sharing-container">
-            <p class="expire">Le lien expire dans 24 heures</p>
+
+      </div>
+    </section><!-- End Services Section -->
 
 
-            <div class="input-container">
-                <input type="text" id="fileURL" readonly>
-                <img src="./images/copy-icon.svg" id="copyURLBtn" alt="copy to clipboard icon">
-            </div>
-
-
-            <p class="email-info">Ou envoyer par e-mail</p>
-            <div class="email-container">
-                <form id="emailForm">
-                    <div class="filed">
-                        <label for="fromEmail">Votre e-mail</label>
-                        <input type="email" autocomplete="email" required name="from-email" id="fromEmail">
-                    </div>
-
-                    <div class="filed">
-                        <label for="toEmail">Email de récepteur</label>
-                        <input type="email" required autocomplete="receiver" name="to-email" id="toEmail">
-                    </div>
-                    <div class="send-btn-container">
-                        <button type="submit">Envoyer</button>
-                    </div>
-                </form>
-            </div>
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="titletime">Team</h3>
+          <p class="section-description"></p>
         </div>
-    </section>
-    <div class="image-vector"></div>
-    <div class="toast">exemple de message</div>
+        <div class="row">
+          <div class="col-lg-2 offset-lg-1 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="/img/rabab.jpeg" alt=""></div>
+              <h4 class="filles">AAKAR Rabab</h4>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
 
-    <script src="./js/index.js"></script>
-    <script src="https://kit.fontawesome.com/dd1d7d0c31.js" crossorigin="anonymous"></script>
+          <div class="col-lg-2 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="/img/rehab.jpeg" alt=""></div>
+              <h4 class="filles">AAKAR Rehab</h4>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="/img/salma.jpg" alt=""></div>
+              <h4 class="filles">BAHRAOUI Salma</h4>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="pic"><img src="/img/safaa.jpeg" alt=""></div>
+              <h4 class="filles">BROUK Safaa</h4>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="pic"><img src="/img/ghita.jpeg" alt=""></div>
+              <h4 class="filles">GHAFFARI Ghita</h4>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <br>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Contact</h3>
+          <p class="section-description"></p>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>MOROCCO<br>Casablanca, NY 535022</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>rsg.sharing.officiel@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+212611661166</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>RSG-Sharing</strong>. All Rights Reserved 2020/2021
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+      -->
+        <a>Designed by RSG-Sharing</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/vendor/aos/aos.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/vendor/php-email-form/validate.js"></script>
+  <script src="/vendor/purecounter/purecounter.js"></script>
+  <script src="/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+
 </body>
 
 </html>
