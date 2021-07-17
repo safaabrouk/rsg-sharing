@@ -148,7 +148,7 @@ emailForm.addEventListener("submit", (e) => {
     emailFrom: emailForm.elements["from-email"].value,
   };
   console.log(formData);
-  fetch(emailURL, {
+  fetch("/send", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
