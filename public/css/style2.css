@@ -54,9 +54,10 @@ section.download {
   }
 
   .send-btn-container a:hover {
-      background: var(--dark-blue);
+      background: #CB6CE6;
   }
 
 .test{
     border: 2px dashed var(--border-color); border-radius: 10px;
 }
+
